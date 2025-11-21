@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How It Works - StudentStay</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .gradient-text {
+            background: linear-gradient(135deg, #f97316 0%, #fb923c 50%, #fbbf24 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .step-card {
+            transition: all 0.3s ease;
+        }
+        
+        .step-card:hover {
+            transform: scale(1.05);
+        }
+
+        @keyframes pulse-slow {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        .animate-pulse-slow {
+            animation: pulse-slow 2s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-orange-50 via-white to-yellow-50">
+    
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-md shadow-lg z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center gap-3">
+                    <svg class="w-10 h-10 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+                    </svg>
+                    <div>
+                        <h1 class="text-2xl font-bold gradient-text">StudentStay</h1>
+                        <p class="text-xs text-gray-600">Find Your Home</p>
+                    </div>
+                </div>
+                
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="AccomodationHome.html" class="text-gray-700 hover:text-orange-600 font-medium transition">Home</a>
+                    <a href="AccomodationFeatures.html" class="text-gray-700 hover:text-orange-600 font-medium transition">Features</a>
+                    <a href="HowItWorks.html" class="text-orange-600 font-semibold transition">How It Works</a>
+                    <a href="Review.html" class="text-gray-700 hover:text-orange-600 font-medium transition">Reviews</a>
+                </div>
+                
+                
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-16 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
+                How <span class="gradient-text">StudentStay</span> Works
+            </h1>
+            <p class="text-xl text-gray-600 leading-relaxed">
+                Finding your perfect student home is simple with our 3-step process
+            </p>
+        </div>
+    </section>
+
+    <!-- Main Steps Section -->
+    <section class="py-12 px-4">
+        <div class="max-w-7xl mx-auto">
+            
+            <!-- Step 1 -->
+            <div class="grid lg:grid-cols-2 gap-12 items-center mb-24">
+                <div class="order-2 lg:order-1">
+                    <div class="relative inline-block mb-6">
+                        <div class="w-20 h-20 bg-gradient-to-br from-orange-600 to-orange-400 rounded-2xl flex items-center justify-center text-white text-3xl font-bold shadow-2xl step-card">
+                            1
+                        </div>
+                        <div class="absolute -top-2 -right-2 w-8 h-8 bg-yellow-400 rounded-full animate-pulse-slow"></div>
+                    </div>
+                    <h2 class="text-4xl font-bold text-gray-900 mb-6">Create Your Account</h2>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        Sign up in minutes with your student details. Tell us about yourself, your preferences, and what you're looking for.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-green-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <div>
+                                <span class="font-semibold text-gray-900">Quick Registration:</span>
+                                <span class="text-gray-600"> Just your student number, name, email, and preferences</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-green-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <div>
+                                <span class="font-semibold text-gray-900">Set Your Preferences:</span>
+                                <span class="text-gray-600"> NSFAS funding status, room type (single/double), budget</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-green-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <div>
+                                <span class="font-semibold text-gray-900">Verify Your Email:</span>
+                                <span class="text-gray-600"> Secure your account and start browsing immediately</span>
+                            </div>
+                        </li>
+                    </ul>
+                   
+                </div>
+                <div class="order-1 lg:order-2">
+                    <div class="bg-gradient-to-br from-orange-100 to-yellow-100 rounded-3xl p-8 shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=600&h=400&fit=crop" alt="Student Registration" class="rounded-2xl shadow-lg">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="grid lg:grid-cols-2 gap-12 items-center mb-24">
+                <div class="bg-gradient-to-br from-blue-100 to-indigo-100 rounded-3xl p-8 shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&h=400&fit=crop" alt="Browse Properties" class="rounded-2xl shadow-lg">
+                </div>
+                <div>
+                    <div class="relative inline-block mb-6">
+                        <div class="w-20 h-20 bg-gradient-to-br from-blue-600 to-blue-400 rounded-2xl flex items-center justify-center text-white text-3xl font-bold shadow-2xl step-card">
+                            2
+                        </div>
+                        <div class="absolute -top-2 -right-2 w-8 h-8 bg-cyan-400 rounded-full animate-pulse-slow"></div>
+                    </div>
+                    <h2 class="text-4xl font-bold text-gray-900 mb-6">Browse & Filter</h2>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        Search through hundreds of verified properties and find exactly what you need with our powerful filters.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-green-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <div>
+                                <span class="font-semibold text-gray-900">Smart Filters:</span>
+                                <span class="text-gray-600"> Price range, location, NSFAS-friendly, accredited, distance to campus</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-green-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <div>
+                                <span class="font-semibold text-gray-900">View Photos:</span>
+                                <span class="text-gray-600"> See high-quality images of rooms, facilities, and common areas</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-green-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <div>
+                                <span class="font-semibold text-gray-900">Check Transport:</span>
+                                <span class="text-gray-600"> View available transport routes and distance to your campus</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-green-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <div>
+                                <span class="font-semibold text-gray-900">Save Favorites:</span>
+                                <span class="text-gray-600"> Bookmark properties you like and compare them later</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="grid lg:grid-cols-2 gap-12 items-center mb-24">
+                <div class="order-2 lg:order-1">
+                    <div class="relative inline-block mb-6">
+                        <div class="w-20 h-20 bg-gradient-to-br from-green-600 to-green-400 rounded-2xl flex items-center justify-center text-white text-3xl font-bold shadow-2xl step-card">
+                            3
+                        </div>
+                        <div class="absolute -top-2 -right-2 w-8 h-8 bg-lime-400 rounded-full animate-pulse-slow"></div>
+                    </div>
+                    <h2 class="text-4xl font-bold text-gray-900 mb-6">Connect & Move In</h2>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        Chat with landlords, schedule viewings, and secure your new home - all through our platform.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-green-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <div>
+                                <span class="font-semibold text-gray-900">Instant Chat:</span>
+                                <span class="text-gray-600"> Message landlords directly and get quick responses</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-green-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <div>
+                                <span class="font-semibold text-gray-900">Schedule Viewings:</span>
+                                <span class="text-gray-600"> Book a time to visit and see the property in person</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-green-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <div>
+                                <span class="font-semibold text-gray-900">Ask Questions:</span>
+                                <span class="text-gray-600"> Get all the info you need about lease terms, deposits, and amenities</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-green-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <div>
+                                <span class="font-semibold text-gray-900">Secure Your Spot:</span>
+                                <span class="text-gray-600"> Once you're happy, finalize the agreement and move in!</span>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                </div>
+                <div class="order-1 lg:order-2">
+                    <div class="bg-gradient-to-br from-green-100 to-emerald-100 rounded-3xl p-8 shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=600&h=400&fit=crop" alt="Connect with Landlords" class="rounded-2xl shadow-lg">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Timeline Visual -->
+    <section class="py-20 px-4 bg-white">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16">
+                Your Journey to <span class="gradient-text">Student Housing</span>
+            </h2>
+            
+            <div class="relative">
+                <!-- Timeline Line -->
+                <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-orange-600 via-blue-600 to-green-600"></div>
+                
+                <!-- Timeline Items -->
+                <div class="space-y-12">
+                    <!-- Day 1 -->
+                    <div class="relative flex items-center">
+                        <div class="flex-1 text-right pr-8">
+                            <div class="bg-gradient-to-r from-orange-50 to-yellow-50 p-6 rounded-2xl border-2 border-orange-200 inline-block">
+                                <h3 class="font-bold text-lg text-orange-600">Day 1: Sign Up</h3>
+                                <p class="text-gray-600">Create your account and set preferences</p>
+                            </div>
+                        </div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-12 h-12 bg-orange-600 rounded-full flex items-center justify-center text-white font-bold shadow-lg z-10">
+                            1
+                        </div>
+                        <div class="flex-1 pl-8"></div>
+                    </div>
+                    
+                    <!-- Day 1-3 -->
+                    <div class="relative flex items-center">
+                        <div class="flex-1 pr-8"></div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold shadow-lg z-10">
+                            2
+                        </div>
+                        <div class="flex-1 pl-8">
+                            <div class="bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-2xl border-2 border-blue-200 inline-block">
+                                <h3 class="font-bold text-lg text-blue-600">Day 1-3: Browse</h3>
+                                <p class="text-gray-600">Search and shortlist your favorite properties</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Day 3-5 -->
+                    <div class="relative flex items-center">
+                        <div class="flex-1 text-right pr-8">
+                            <div class="bg-gradient-to-r from-purple-50 to-pink-50 p-6 rounded-2xl border-2 border-purple-200 inline-block">
+                                <h3 class="font-bold text-lg text-purple-600">Day 3-5: Contact</h3>
+                                <p class="text-gray-600">Chat with landlords and schedule viewings</p>
+                            </div>
+                        </div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold shadow-lg z-10">
+                            3
+                        </div>
+                        <div class="flex-1 pl-8"></div>
+                    </div>
+                    
+                    <!-- Day 5-7 -->
+                    <div class="relative flex items-center">
+                        <div class="flex-1 pr-8"></div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-12 h-12 bg-green-600 rounded-full flex items-center justify-center text-white font-bold shadow-lg z-10">
+                            ✓
+                        </div>
+                        <div class="flex-1 pl-8">
+                            <div class="bg-gradient-to-r from-green-50 to-emerald-50 p-6 rounded-2xl border-2 border-green-200 inline-block">
+                                <h3 class="font-bold text-lg text-green-600">Day 5-7: Move In!</h3>
+                                <p class="text-gray-600">Finalize agreement and settle into your new home</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16">
+                Frequently Asked <span class="gradient-text">Questions</span>
+            </h2>
+            
+            <div class="space-y-6">
+                <div class="bg-white p-6 rounded-2xl shadow-lg border-2 border-gray-100">
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">How long does it take to find accommodation?</h3>
+                    <p class="text-gray-600">Most students find their perfect place within 5-7 days. With our instant chat feature, you can connect with landlords immediately and speed up the process!</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-2xl shadow-lg border-2 border-gray-100">
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Is StudentStay free to use?</h3>
+                    <p class="text-gray-600">Yes! Creating an account, browsing properties, and messaging landlords is completely free for students. We want to make finding accommodation as easy as possible.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-2xl shadow-lg border-2 border-gray-100">
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Are all properties NSFAS-friendly?</h3>
+                    <p class="text-gray-600">Not all, but you can easily filter to show only NSFAS-friendly accommodation. We clearly mark which properties accept NSFAS funding to save you time.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-2xl shadow-lg border-2 border-gray-100">
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">How are properties verified?</h3>
+                    <p class="text-gray-600">We verify each landlord's identity and visit properties to ensure they meet safety standards. We also check accreditation status with universities and local authorities.</p>
+                </div>
+            </div>
+            <button onclick="window.location.href='AccomodationHome.html'" class="mt-4 mx-auto block text-gray-600 hover:text-gray-900">
+            ← Back
+        </button>
+        </div>
+    </section>
+
+    
+  
+</body>
+</html>
